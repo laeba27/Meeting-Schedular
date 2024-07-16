@@ -46,7 +46,8 @@ function MeetingEventList() {
       getEventList();
     }
 
-    console.log(user?.email);
+    console.log(eventList,"this is my data");
+    
   }, [user]);
   const getEventList = async () => {
     setEventList([]);
@@ -88,7 +89,7 @@ function MeetingEventList() {
                   <DropdownMenuSeparator />
                   <div className=" hover:bg-gray-100 hover:font-semibold rounded-sm p-1 gap-3">
                     {" "}
-                    <EditMeeting />
+                    <EditMeeting id={event.id}  />
                   </div>
 
                   <DropdownMenuItem
