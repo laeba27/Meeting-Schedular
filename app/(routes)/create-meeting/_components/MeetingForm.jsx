@@ -136,7 +136,7 @@ const onCreateClick=async()=>{
       </div>
       <div>
         <Button className="w-full mt-9"
-        disabled={(!eventName||!duration||!locationType||!meetingURL )}
+        disabled={(!eventName||!duration||!locationType||!meetingURL||!meetingDate||!selectedTime )}
         onClick={()=>onCreateClick()}
         > Create</Button>
       </div>

@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
+
 function Hero() {
   return (
     <div className="flex flex-col justify-center items-center my-20">
