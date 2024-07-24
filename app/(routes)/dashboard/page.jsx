@@ -6,6 +6,8 @@ import { doc, getDoc, getFirestore, collection, query, where, getDocs, orderBy }
 import { useRouter } from "next/navigation";
 import FullCalendar from '@fullcalendar/react';
 import dayGridPlugin from '@fullcalendar/daygrid';
+import Image from "next/image";
+
 
 function Dashboard() {
   const [myEvents, setEvents] = useState([]);
@@ -64,7 +66,9 @@ function Dashboard() {
   };
 
   if (loading) {
-    return <h2>Loading...</h2>;
+    return <div className=" h-screen w-[150vh] flex items-center justify-center">
+    <Image src="/spinner.svg" alt="spinner" height={300} width={300} />
+  </div> ;
   }
 
   const renderEventContent = (eventInfo) => {

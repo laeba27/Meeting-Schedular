@@ -35,6 +35,7 @@ import {
   DropdownMenuTrigger,
 } from "../../../../../components/ui/dropdown-menu";
 import EditMeeting from "./EditMeeting";
+import Image from "next/image";
 
 function MeetingEventList() {
   const db = getFirestore(app);
@@ -146,7 +147,9 @@ function MeetingEventList() {
           </div> // end of div.p-5.border-r
         ))
       ) : (
-        <h2>Loading</h2>
+        <div className=" h-[70vh] w-[150vh] flex items-center justify-center">
+      <Image src="/spinner.svg" alt="spinner" height={300} width={300} />
+    </div>
       )}
     </div>
   );
