@@ -1,7 +1,7 @@
 import { Inter, Outfit } from "next/font/google";
 import "./globals.css";
 import { Toaster } from "../components/ui/sonner";
-
+import Head from 'next/head';
 const inter = Outfit({ subsets: ["latin"] });
 
 export const metadata = {
@@ -12,6 +12,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+    <Head>
+     <meta name="google-site-verification" content="TdMZcCgup5n4hjeG2MIGCa8DzJj41atsbr3-gy55xIc" />
+      </Head>
       <body className={inter.className}>
       <Toaster/>
       {children}</body>
