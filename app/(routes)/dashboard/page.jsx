@@ -8,7 +8,7 @@ import { useRouter } from "next/navigation"; // Import Next.js router for naviga
 import FullCalendar from '@fullcalendar/react'; // Import FullCalendar component.
 import dayGridPlugin from '@fullcalendar/daygrid'; // Import the dayGrid plugin for FullCalendar.
 import Image from "next/image"; // Import Image component for optimized images.
-import Head from 'next/head';
+
 function Dashboard() {
   const [myEvents, setEvents] = useState([]); // State to hold the list of events.
   const db = getFirestore(app); // Initialize Firestore with the Firebase app.
@@ -100,9 +100,7 @@ function Dashboard() {
   
   return (
     <div className="p-10">
-     <Head>
-     <meta name="google-site-verification" content="TdMZcCgup5n4hjeG2MIGCa8DzJj41atsbr3-gy55xIc" />
-      </Head>
+    
       <FullCalendar
         plugins={[dayGridPlugin]} // Use the dayGridPlugin for calendar view.
         initialView="dayGridMonth" // Set the initial view to a month grid.
