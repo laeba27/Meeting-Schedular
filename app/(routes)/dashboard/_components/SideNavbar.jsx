@@ -6,6 +6,7 @@ import { Button } from "../../../../components/ui/button";
 import { Briefcase, Calendar, Clock, Plus, Settings } from "lucide-react";
 import { usePathname } from 'next/navigation'
 import  { useEffect, useState } from 'react'
+
 function SideNavbar() {
   const menu = [
     {
@@ -16,18 +17,24 @@ function SideNavbar() {
     },
     {
       id: 2,
-      name: "Scheduled Meeting",
-      path: "/dashboard/scheduled-meeting",
+      name: "Contacts",
+      path: "/dashboard/contacts",
       icon: Calendar,
     },
     {
       id: 3,
-      name: "Availability",
-      path: "/dashboard/availability",
+      name: "Scheduled Meeting",
+      path: "/dashboard/scheduled",
       icon: Clock,
     },
     {
       id: 4,
+      name: "Video Call",
+      path: "/dashboard/videocall",
+      icon: Clock,
+    },
+    {
+      id: 5,
       name: "Settings",
       path: "/dashboard/settings",
       icon: Settings,

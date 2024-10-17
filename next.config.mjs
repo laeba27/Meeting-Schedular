@@ -1,6 +1,5 @@
 // next.config.mjs
 import withPlugins from 'next-compose-plugins';
-import svgr from '@svgr/webpack';
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
@@ -19,4 +18,3 @@ const nextConfig = {
 };
 
 export default withPlugins([], nextConfig);
-
