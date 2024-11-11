@@ -43,7 +43,7 @@ function MeetingForm({ setFormValue, meetingDate, selectedTime }) {
   const generateMeetingURL = () => {
     const uniqueId = generateRandomId(); // Generate a random ID
     const sanitizedEventName = eventName ? eventName.replace(/\s+/g, '-').toLowerCase() : 'meeting';
-    const generatedURL = `https://yourwebsite.com/meeting/${sanitizedEventName}-${uniqueId}`; // Use your actual website domain
+    const generatedURL = `http://localhost:3000/dashboard/videocall/${sanitizedEventName}-${uniqueId}`; // Use your actual website domain
     setMeetingURL(generatedURL); // Set the URL in state
     return generatedURL;
   };

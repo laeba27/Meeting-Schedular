@@ -34,7 +34,7 @@ import {
 import EditMeeting from "./EditMeeting";
 import Image from "next/image";
 import Share from "./Share";
-import VideoCall from "../../videocall/page"; // Import your VideoCall component
+import VideoCall from "../../videocall/[id]/page"; // Import your VideoCall component
 
 function MeetingEventList() {
   const db = getFirestore(app);

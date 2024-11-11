@@ -68,3 +68,14 @@
     color: #ffffff;
   }
   
+  .video-grid {
+    padding: 30px;
+    width: 80%;
+    height: auto;
+  }
+  #video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 10px;
+  }
+  
